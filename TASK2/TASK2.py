@@ -3,4 +3,8 @@
 [2, 3, 4, 5, 6] => [12, 15, 16];
 [2, 3, 5, 6] => [12, 15]'''
 
-
+list = [2, 3, 4, 5, 6]
+result_list = []
+for i in range(len(list)//2):
+    result_list.append(list[i]*list[len(list)-1-i])
+print(result_list)
